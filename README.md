@@ -49,6 +49,25 @@ git config user.name "ExamenLorenzo"    -->     ExamenLorenzo es el nombre de us
 
 ---
 
+## Diagrama de flujo.
+
+````mermaid
+graph TD;
+
+INICIO-->id1[Mostrar menu]
+id1-->id2[/Opciones/]
+id2-->sw{1,2 o 3}
+sw-->|Opcion 1|1[/Pedir filas/]
+sw-->|Opcion 2|2[/Pedir filas/]
+sw-->|Opcion 3|3[/Pedir filas/]
+sw-->|Default|4[Mostrar error]
+1-->1.1[Dibujar TrianguloA]
+2-->2.1[Dibujar TrianguloB]
+3-->3.1[Dibujar TrianguloC]
+4-->sw
+1.1-->FINAL
+2.1-->FINAL
+3.1-->FINAL
 
 
 
